@@ -1,5 +1,5 @@
 {
-  "name": "ncg-spotify",
+  "name": "nodecg-spotify",
   "version": "1.5.0",
   "description": "Connector for spotify to allow spotify song titles to show",
   "files": [
@@ -43,7 +43,7 @@
     "watch:extension": "tsc -b tsconfig.node.json --watch",
     "watch:browser": "tsc -p tsconfig.browser.json --watch",
     "schema-types": "trash src/types/schemas && nodecg schema-types",
-    "start": "node ../.. --bundlesEnabled=ncg-spotify"
+    "start": "node ../.. --bundlesEnabled=nodecg-spotify"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^1.4.2",
@@ -51,6 +51,7 @@
     "eslint": "^5.14.1",
     "eslint-config-google": "^0.12.0",
     "eslint-config-typescript": "^2.0.0",
+    "nodecg-cli": "^7.0.0",
     "trash-cli": "^1.4.0",
     "typescript": "^3.2.2"
   }

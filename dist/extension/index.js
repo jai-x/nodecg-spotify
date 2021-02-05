@@ -9,7 +9,7 @@ module.exports = (nodecg) => {
     const clientId = nodecg.bundleConfig.clientId;
     const clientSecret = nodecg.bundleConfig.clientSecret;
     const currentSongRep = nodecg.Replicant('currentSong');
-    const redirectURI = `http://${nodecg.config.baseURL}/bundles/ncg-spotify/spotify-callback/index.html`;
+    const redirectURI = `http://${nodecg.config.baseURL}/bundles/nodecg-spotify/spotify-callback/index.html`;
     let automaticSongFetching;
     let connectedToSpotify = false;
     const spotifyApi = new SpotifyWebApi;

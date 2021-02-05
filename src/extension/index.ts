@@ -17,7 +17,7 @@ module.exports = (nodecg: NodeCG) => {
 
 	const currentSongRep = nodecg.Replicant<CurrentSong>('currentSong');
 
-	const redirectURI = `http://${nodecg.config.baseURL}/bundles/ncg-spotify/spotify-callback/index.html`;
+	const redirectURI = `http://${nodecg.config.baseURL}/bundles/nodecg-spotify/spotify-callback/index.html`;
 
 	let automaticSongFetching: NodeJS.Timeout;
 	let connectedToSpotify = false;
