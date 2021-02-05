@@ -102,7 +102,7 @@ module.exports = (nodecg: NodeCG) => {
 	nodecg.listenFor('fetchCurrentSong', () => {
 		spotifyApi.getMyCurrentPlayingTrack({})
 			.then((data: any) => {
-				if (!data.body) {
+				if (!data.body || !data.body.item) {
 					return;
 				}
 				// If song is same and playing then no difference
